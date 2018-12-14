@@ -57,6 +57,16 @@ public class Message_Operation {
             IP.set(i, plainMessage.get(INITIAL_PERMUTATION[i] - 1));
         }
 
+        System.out.println();
+        System.out.print("IM: ");
+        for(int j = 0; j < 64; j++) {
+            if(j == 4 || j == 8 || j == 12 || j == 16 || j == 20 || j == 24 || j == 28 || j == 32 || j == 36 || j == 40 || j == 44 || j == 48 || j == 52 || j == 56 || j == 60 || j == 64) {
+                System.out.print(" ");
+            }
+            System.out.print(plainMessage.get(j) ? 1 : 0);
+        }
+        System.out.println();
+        System.out.print("IP: ");
         for(int j = 0; j < 64; j++) {
             if(j == 4 || j == 8 || j == 12 || j == 16 || j == 20 || j == 24 || j == 28 || j == 32 || j == 36 || j == 40 || j == 44 || j == 48 || j == 52 || j == 56 || j == 60 || j == 64) {
                 System.out.print(" ");
