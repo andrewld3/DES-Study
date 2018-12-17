@@ -36,9 +36,10 @@ public class Key_Operation {
                 key.set(i);
             }
         }
+        permutateKeys();
     }
 
-    public void permutateKeys() {
+    private void permutateKeys() {
          initialPermutation();
     }
 
